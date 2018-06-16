@@ -23,6 +23,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    // No se puede poner en el viewWillAppear porque no se ejecuta el segue si no está cargada la vista
+    override func viewDidAppear(_ animated: Bool)
+    {
+        if PFUser.current() != nil
+        {
+            self.performSegue(withIdentifier: "showUsers", sender: self)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -38,6 +47,17 @@ class ViewController: UIViewController {
         }
         else
         {
+            
+            
+            let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+            activityIndicator.center = self.view.center
+            activityIndicator.hidesWhenStopped = true
+            activityIndicator.activityIndicatorViewStyle =  UIActivityIndicatorViewStyle.gray
+            view.addSubview(activityIndicator)
+            activityIndicator.startAnimating()
+            
+            UIApplication.shared.beginIgnoringInteractionEvents()
+            
             if (registerMode == true)
             {
                 let user = PFUser()
@@ -47,6 +67,10 @@ class ViewController: UIViewController {
                 
                 user.signUpInBackground(block:
                     {(success, error) in
+                        
+                        activityIndicator.stopAnimating()
+                        UIApplication.shared.endIgnoringInteractionEvents()
+                        
                         if let error = error
                         {
                             print(error)
@@ -55,6 +79,7 @@ class ViewController: UIViewController {
                         else
                         {
                             print("User registered successfully!")
+                            self.performSegue(withIdentifier: "showUsers", sender: self)
                         }
                         
                 })
@@ -63,6 +88,10 @@ class ViewController: UIViewController {
             {
                 PFUser.logInWithUsername(inBackground: txtEmail.text!, password: txtPass.text!, block:
                 {(user, error) in
+                    
+                    activityIndicator.stopAnimating()
+                    UIApplication.shared.endIgnoringInteractionEvents()
+                    
                     if error != nil
                     {
                         print("Login error :(")
@@ -70,9 +99,8 @@ class ViewController: UIViewController {
                     if user != nil
                     {
                         print("User logged successfully!")
+                        self.performSegue(withIdentifier: "showUsers", sender: self)
                     }
-                    
-                    
                     
                 })
             }
