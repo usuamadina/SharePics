@@ -14,6 +14,8 @@
 		AA2D542A20D51D6300B5A5E4 /* SharePics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA2D542820D51D6300B5A5E4 /* SharePics.xcdatamodeld */; };
 		AA2D542C20D51D6400B5A5E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2D542B20D51D6400B5A5E4 /* Assets.xcassets */; };
 		AA2D542F20D51D6400B5A5E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2D542D20D51D6400B5A5E4 /* LaunchScreen.storyboard */; };
+		AA2D543720D5263800B5A5E4 /* camera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA2D543620D5263800B5A5E4 /* camera.jpg */; };
+		AA2D543920D527B700B5A5E4 /* camera2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA2D543820D527B600B5A5E4 /* camera2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AA2D542B20D51D6400B5A5E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA2D542E20D51D6400B5A5E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA2D543020D51D6400B5A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2D543620D5263800B5A5E4 /* camera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera.jpg; sourceTree = "<group>"; };
+		AA2D543820D527B600B5A5E4 /* camera2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera2.jpg; sourceTree = "<group>"; };
 		CAD1BC05E68F6E7E4ED29C9C /* Pods-SharePics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePics.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharePics/Pods-SharePics.release.xcconfig"; sourceTree = "<group>"; };
 		D2DA6ECF18448F33415036FE /* Pods-SharePics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SharePics/Pods-SharePics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +75,8 @@
 		AA2D542020D51D6300B5A5E4 /* SharePics */ = {
 			isa = PBXGroup;
 			children = (
+				AA2D543820D527B600B5A5E4 /* camera2.jpg */,
+				AA2D543620D5263800B5A5E4 /* camera.jpg */,
 				AA2D542120D51D6300B5A5E4 /* AppDelegate.swift */,
 				AA2D542320D51D6300B5A5E4 /* ViewController.swift */,
 				AA2D542520D51D6300B5A5E4 /* Main.storyboard */,
@@ -153,7 +159,9 @@
 			files = (
 				AA2D542F20D51D6400B5A5E4 /* LaunchScreen.storyboard in Resources */,
 				AA2D542C20D51D6400B5A5E4 /* Assets.xcassets in Resources */,
+				AA2D543720D5263800B5A5E4 /* camera.jpg in Resources */,
 				AA2D542720D51D6300B5A5E4 /* Main.storyboard in Resources */,
+				AA2D543920D527B700B5A5E4 /* camera2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
