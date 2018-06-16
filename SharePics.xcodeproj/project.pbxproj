@@ -15,6 +15,7 @@
 		AA2D542C20D51D6400B5A5E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2D542B20D51D6400B5A5E4 /* Assets.xcassets */; };
 		AA2D542F20D51D6400B5A5E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2D542D20D51D6400B5A5E4 /* LaunchScreen.storyboard */; };
 		AA2D543720D5263800B5A5E4 /* camera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA2D543620D5263800B5A5E4 /* camera.jpg */; };
+		AA2D543B20D5990600B5A5E4 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2D543A20D5990600B5A5E4 /* UsersTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AA2D542E20D51D6400B5A5E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA2D543020D51D6400B5A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA2D543620D5263800B5A5E4 /* camera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera.jpg; sourceTree = "<group>"; };
+		AA2D543A20D5990600B5A5E4 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		CAD1BC05E68F6E7E4ED29C9C /* Pods-SharePics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePics.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharePics/Pods-SharePics.release.xcconfig"; sourceTree = "<group>"; };
 		D2DA6ECF18448F33415036FE /* Pods-SharePics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SharePics/Pods-SharePics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				AA2D542D20D51D6400B5A5E4 /* LaunchScreen.storyboard */,
 				AA2D543020D51D6400B5A5E4 /* Info.plist */,
 				AA2D542820D51D6300B5A5E4 /* SharePics.xcdatamodeld */,
+				AA2D543A20D5990600B5A5E4 /* UsersTableViewController.swift */,
 			);
 			path = SharePics;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				AA2D542A20D51D6300B5A5E4 /* SharePics.xcdatamodeld in Sources */,
 				AA2D542420D51D6300B5A5E4 /* ViewController.swift in Sources */,
+				AA2D543B20D5990600B5A5E4 /* UsersTableViewController.swift in Sources */,
 				AA2D542220D51D6300B5A5E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
